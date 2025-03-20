@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registration form</title>
+    </head>
+    <body>
+        <h3>Books to read</h3>
+        <ol type="I"> <!--Ordered list with Roman numerals-->
+            <li>Half of Yellow Sun</li>
+            <li>Americanah</li>
+            <li>Bamboozled by Jesus</li>
+            <li>Atomic Habits</li>
+        </ol>
+        <br>
+        <!--external image from pexels.com-->
+        <img src="https://www.pexels.com/photo/cowboy-silhouette-riding-at-sunset-in-ardic-30147888/.jpg" alt="Pexels Image" width="240" height="240">
+
+        <table border="1">
+            <thead><!--Table headers for each row-->
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Mobile</th>
+                    <th>Emails</th>
+                </tr>
+            </thead>
+            <tbody><!--Contents for the table-->
+                <tr>
+                    <td>Mike</td>
+                    <td>Nairobi</td>
+                    <td>0722345678</td>
+                    <td>mike4@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Jane</td>
+                    <td>Kiambu</td>
+                    <td>0722345690</td>
+                    <td>jaane4@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Peter</td>
+                    <td>Baringo</td>
+                    <td>0722346738</td>
+                    <td>petertt4@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Keya</td>
+                    <td>Timboroa</td>
+                    <td>0776785678</td>
+                    <td>keya4@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Nelly</td>
+                    <td>Nairobi</td>
+                    <td>0722123678</td>
+                    <td>nellyk@gmail.com</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Registration Form</h3>
+        <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        <br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <br>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+        <br>
+        
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+        <br>
+
+        <label for="gender">Gender:</label><!--Radio selection-->
+        <input type="radio" id="male" name="gender" value="male" required> Male
+        <input type="radio" id="female" name="gender" value="female" required> Female
+        <br>
+        
+        <label for="country">Country:</label><!--Drop-down list-->
+        <select id="country" name="country" required>
+            <option value="">Select your country</option>
+            <option value="ken">Kenya</option>
+            <option value="TZ">Tanzania</option>
+            <option value="UG">Uganda</option>
+        </select>
+        <br>
+        
+        <label>Interests:</label> <!--Use of checkbox-->
+        <input type="checkbox" name="interests" value="coding"> Coding
+        <input type="checkbox" name="interests" value="reading"> Reading
+        <input type="checkbox" name="interests" value="sports"> Hiking
+        <br>
+        
+        <button type="submit">Register</button>
+        <button type="reset">Reset</button>
+        </form>
+    </body>
+</html>
